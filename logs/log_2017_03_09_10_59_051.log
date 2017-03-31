@@ -1,0 +1,186 @@
+2017-03-09 10:59:51  [ main:1 ] - [ ERROR ]  [用例集开关]: D:\workspace\TestCase\测试\健康险_鼎力_尊享e生医疗保险（100万版）(3).xlsx用例集开关 未包含 见费出单
+2017-03-09 10:59:51  [ pool-1-thread-2:1 ] - [ INFO ]  [接口配置Down]: D:\workspace\TestCase\测试\uat-大疆三者责任险+机损险投保 .xlsx接口配置Down 未配置IP,取接口配置Up中的值
+2017-03-09 10:59:51  [ pool-1-thread-2:6 ] - [ INFO ]  [接口配置Down]: D:\workspace\TestCase\测试\uat-大疆三者责任险+机损险投保 .xlsx接口配置Down 未配置VERSION,取接口配置Up中的值
+2017-03-09 10:59:51  [ pool-1-thread-2:26 ] - [ INFO ]  ---------当前用例执行开始，用例编号:TestCase01,接口类型: OpenAPI
+2017-03-09 10:59:51  [ pool-1-thread-2:38 ] - [ INFO ]  
+表达式引擎解析前的参数: 
+combinNo=@MirrorStr()
+parentPolicyNo=833382000425106511
+djiNo=@RString("m","12")
+airplaneType=djiRF-1
+activeTime=20170301
+cusName=杨阳
+cusBirthday=19810626
+productNo=ff633ad8736868f0b00fa0e64f48aa1524dfbbed13b9
+stockFlag=Y
+insuredPeriod=12
+channelCode=1
+cusCerti=
+cusPhone=13410892879
+2017-03-09 10:59:51  [ pool-1-thread-2:195 ] - [ INFO ]  表达式: [MirrorStr()]开始解析...
+2017-03-09 10:59:51  [ pool-1-thread-2:237 ] - [ INFO ]  表达式: [RString("m","12")]开始解析...
+2017-03-09 10:59:51  [ pool-1-thread-2:241 ] - [ INFO ]  
+表达式引擎解析后的参数: 
+combinNo=GGNJICSR_GGNJICSR
+parentPolicyNo=833382000425106511
+djiNo=XxGrXnOjMdMs
+airplaneType=djiRF-1
+activeTime=20170301
+cusName=杨阳
+cusBirthday=19810626
+productNo=ff633ad8736868f0b00fa0e64f48aa1524dfbbed13b9
+stockFlag=Y
+insuredPeriod=12
+channelCode=1
+cusCerti=
+cusPhone=13410892879
+2017-03-09 10:59:51  [ pool-1-thread-2:429 ] - [ INFO ]  Excel参数JSON: {"activeTime":"20170301","airplaneType":"djiRF-1","channelCode":"1","combinNo":"GGNJICSR_GGNJICSR","cusBirthday":"19810626","cusCerti":"","cusName":"杨阳","cusPhone":"13410892879","djiNo":"XxGrXnOjMdMs","insuredPeriod":"12","parentPolicyNo":"833382000425106511","productNo":"ff633ad8736868f0b00fa0e64f48aa1524dfbbed13b9","stockFlag":"Y"}
+2017-03-09 10:59:52  [ pool-1-thread-2:1827 ] - [ INFO ]  bizcontent: {"thirdPartyIns":{"sumInsured":"1000000","premium":"500","policyNo":"823282000698019205","elePolicyUrl":"https://uat.zhongan.com/open/common/downloadFileScreen/downloadDoc.do?data=85f299f59584c16b116a45abc1d04bde51b1579d6dae768a4dfd15c7d3c6158fc4c7f79e330b27c6"},"machineryBreakIns":{"sumInsured":"60000","premium":"3900","certNo":"823892000698019151"},"policyBeginDate":"20170301000000","policyEndDate":"20180228235959"}
+2017-03-09 10:59:53  [ pool-1-thread-2:1855 ] - [ INFO ]  ---------当前用例执行完毕，用例编号:TestCase01---------
+2017-03-09 10:59:53  [ pool-1-thread-2:1856 ] - [ INFO ]  [接口配置Down]: D:\workspace\TestCase\测试\uat-大疆三者责任险+机损险投保 .xlsx接口配置Down 未配置IP,取接口配置Up中的值
+2017-03-09 10:59:53  [ pool-1-thread-2:1856 ] - [ INFO ]  [接口配置Down]: D:\workspace\TestCase\测试\uat-大疆三者责任险+机损险投保 .xlsx接口配置Down 未配置VERSION,取接口配置Up中的值
+2017-03-09 10:59:53  [ pool-1-thread-2:1856 ] - [ INFO ]  ---------当前用例执行开始，用例编号:TestCase29,接口类型: OpenAPI
+2017-03-09 10:59:53  [ pool-1-thread-2:1856 ] - [ INFO ]  
+表达式引擎解析前的参数: 
+djOrderNo=@RString("m","15")
+combinNo=@PayloadDepend("TestCase01","combinNo")
+repairStatus=1
+cusName=李华蛎
+reportDate=20170305000000
+accidentDate=20170304000000
+lossCause=1
+cusTelPhone=1410892879
+returnTime=
+returnNo=
+airplaneType=djiRF-1
+failureReason=断线
+repairMode1=拆机
+amt1=400
+repairMode2=拆机
+amt2=100
+repairMode3=拆机
+amt3=100
+userAmt=100
+repairAmt=100
+costAmt=700
+2017-03-09 10:59:53  [ pool-1-thread-2:1857 ] - [ INFO ]  表达式: [RString("m","15")]开始解析...
+2017-03-09 10:59:53  [ pool-1-thread-2:1867 ] - [ INFO ]  表达式: [PayloadDepend("TestCase01","combinNo")]开始解析...
+2017-03-09 10:59:53  [ pool-1-thread-2:1878 ] - [ INFO ]  
+表达式引擎解析后的参数: 
+djOrderNo=JnOvMkBcOvQaFmZ
+combinNo=GGNJICSR_GGNJICSR
+repairStatus=1
+cusName=李华蛎
+reportDate=20170305000000
+accidentDate=20170304000000
+lossCause=1
+cusTelPhone=1410892879
+returnTime=
+returnNo=
+airplaneType=djiRF-1
+failureReason=断线
+repairMode1=拆机
+amt1=400
+repairMode2=拆机
+amt2=100
+repairMode3=拆机
+amt3=100
+userAmt=100
+repairAmt=100
+costAmt=700
+2017-03-09 10:59:53  [ pool-1-thread-2:1878 ] - [ INFO ]  Excel参数JSON: {"accidentDate":"20170304000000","airplaneType":"djiRF-1","amt1":"400","amt2":"100","amt3":"100","combinNo":"GGNJICSR_GGNJICSR","costAmt":"700","cusName":"李华蛎","cusTelPhone":"1410892879","djOrderNo":"JnOvMkBcOvQaFmZ","failureReason":"断线","lossCause":"1","repairAmt":"100","repairMode1":"拆机","repairMode2":"拆机","repairMode3":"拆机","repairStatus":"1","reportDate":"20170305000000","returnNo":"","returnTime":"","userAmt":"100"}
+2017-03-09 10:59:53  [ pool-1-thread-2:1976 ] - [ INFO ]  bizcontent: {}
+2017-03-09 10:59:53  [ pool-1-thread-2:1976 ] - [ INFO ]  ---------当前用例执行完毕，用例编号:TestCase29---------
+2017-03-09 10:59:53  [ pool-1-thread-2:1977 ] - [ INFO ]  [接口配置Down]: D:\workspace\TestCase\测试\uat-大疆三者责任险+机损险投保 .xlsx接口配置Down 未配置IP,取接口配置Up中的值
+2017-03-09 10:59:53  [ pool-1-thread-2:1978 ] - [ INFO ]  [接口配置Down]: D:\workspace\TestCase\测试\uat-大疆三者责任险+机损险投保 .xlsx接口配置Down 未配置VERSION,取接口配置Up中的值
+2017-03-09 10:59:53  [ pool-1-thread-2:1978 ] - [ INFO ]  ---------当前用例执行开始，用例编号:TestCase70,接口类型: OpenAPI
+2017-03-09 10:59:53  [ pool-1-thread-2:1978 ] - [ INFO ]  
+表达式引擎解析前的参数: 
+productNo=@PayloadDepend("TestCase01","productNo")
+combinNo=@PayloadDepend("TestCase01","combinNo")
+policyNo=@ResponseDepend("TestCase01","policyNo")
+cancelDate=2017-04-21 00:00:00
+transactionId=1
+2017-03-09 10:59:53  [ pool-1-thread-2:1979 ] - [ INFO ]  表达式: [PayloadDepend("TestCase01","productNo")]开始解析...
+2017-03-09 10:59:53  [ pool-1-thread-2:1982 ] - [ INFO ]  表达式: [PayloadDepend("TestCase01","combinNo")]开始解析...
+2017-03-09 10:59:53  [ pool-1-thread-2:1987 ] - [ INFO ]  表达式: [ResponseDepend("TestCase01","policyNo")]开始解析...
+2017-03-09 10:59:53  [ pool-1-thread-2:1991 ] - [ INFO ]  
+表达式引擎解析后的参数: 
+productNo=ff633ad8736868f0b00fa0e64f48aa1524dfbbed13b9
+combinNo=GGNJICSR_GGNJICSR
+policyNo=823282000698019205
+cancelDate=2017-04-21 00:00:00
+transactionId=1
+2017-03-09 10:59:53  [ pool-1-thread-2:1991 ] - [ INFO ]  Excel参数JSON: {"cancelDate":"2017-04-21 00:00:00","combinNo":"GGNJICSR_GGNJICSR","policyNo":"823282000698019205","productNo":"ff633ad8736868f0b00fa0e64f48aa1524dfbbed13b9","transactionId":"1"}
+2017-03-09 10:59:53  [ pool-1-thread-2:2086 ] - [ INFO ]  bizcontent: {"failureReason":"policyNo=823282000698019205普通保单不存在","result":"1"}
+2017-03-09 10:59:53  [ pool-1-thread-2:2086 ] - [ INFO ]  ---------当前用例执行完毕，用例编号:TestCase70---------
+2017-03-09 10:59:53  [ pool-1-thread-2:2087 ] - [ INFO ]  [接口配置Down]: D:\workspace\TestCase\测试\uat-大疆三者责任险+机损险投保 .xlsx接口配置Down 未配置IP,取接口配置Up中的值
+2017-03-09 10:59:53  [ pool-1-thread-2:2087 ] - [ INFO ]  [接口配置Down]: D:\workspace\TestCase\测试\uat-大疆三者责任险+机损险投保 .xlsx接口配置Down 未配置VERSION,取接口配置Up中的值
+2017-03-09 10:59:53  [ pool-1-thread-2:2087 ] - [ INFO ]  ---------当前用例执行开始，用例编号:TestCase71,接口类型: OpenAPI
+2017-03-09 10:59:53  [ pool-1-thread-2:2087 ] - [ INFO ]  
+表达式引擎解析前的参数: 
+productNo=@PayloadDepend("TestCase01","productNo")
+combinNo=@PayloadDepend("TestCase01","combinNo")
+policyNo=@ResponseDepend("TestCase01","policyNo")
+cancelDate=2018-03-06 00:00:00
+transactionId=1
+2017-03-09 10:59:53  [ pool-1-thread-2:2089 ] - [ INFO ]  表达式: [PayloadDepend("TestCase01","productNo")]开始解析...
+2017-03-09 10:59:53  [ pool-1-thread-2:2092 ] - [ INFO ]  表达式: [PayloadDepend("TestCase01","combinNo")]开始解析...
+2017-03-09 10:59:53  [ pool-1-thread-2:2096 ] - [ INFO ]  表达式: [ResponseDepend("TestCase01","policyNo")]开始解析...
+2017-03-09 10:59:53  [ pool-1-thread-2:2099 ] - [ INFO ]  
+表达式引擎解析后的参数: 
+productNo=ff633ad8736868f0b00fa0e64f48aa1524dfbbed13b9
+combinNo=GGNJICSR_GGNJICSR
+policyNo=823282000698019205
+cancelDate=2018-03-06 00:00:00
+transactionId=1
+2017-03-09 10:59:53  [ pool-1-thread-2:2100 ] - [ INFO ]  Excel参数JSON: {"cancelDate":"2018-03-06 00:00:00","combinNo":"GGNJICSR_GGNJICSR","policyNo":"823282000698019205","productNo":"ff633ad8736868f0b00fa0e64f48aa1524dfbbed13b9","transactionId":"1"}
+2017-03-09 10:59:53  [ pool-1-thread-2:2193 ] - [ INFO ]  bizcontent: {"failureReason":"policyNo=823282000698019205普通保单不存在","result":"1"}
+2017-03-09 10:59:53  [ pool-1-thread-2:2194 ] - [ INFO ]  ---------当前用例执行完毕，用例编号:TestCase71---------
+2017-03-09 10:59:53  [ pool-1-thread-2:2195 ] - [ INFO ]  [接口配置Down]: D:\workspace\TestCase\测试\uat-大疆三者责任险+机损险投保 .xlsx接口配置Down 未配置IP,取接口配置Up中的值
+2017-03-09 10:59:53  [ pool-1-thread-2:2195 ] - [ INFO ]  [接口配置Down]: D:\workspace\TestCase\测试\uat-大疆三者责任险+机损险投保 .xlsx接口配置Down 未配置VERSION,取接口配置Up中的值
+2017-03-09 10:59:53  [ pool-1-thread-2:2195 ] - [ INFO ]  ---------当前用例执行开始，用例编号:TestCase72,接口类型: OpenAPI
+2017-03-09 10:59:53  [ pool-1-thread-2:2195 ] - [ INFO ]  
+表达式引擎解析前的参数: 
+productNo=@PayloadDepend("TestCase01","productNo")
+combinNo=@PayloadDepend("TestCase01","combinNo")
+policyNo=@ResponseDepend("TestCase01","policyNo")
+cancelDate=2017-03-15 00:00:00
+transactionId=1
+2017-03-09 10:59:53  [ pool-1-thread-2:2196 ] - [ INFO ]  表达式: [PayloadDepend("TestCase01","productNo")]开始解析...
+2017-03-09 10:59:53  [ pool-1-thread-2:2198 ] - [ INFO ]  表达式: [PayloadDepend("TestCase01","combinNo")]开始解析...
+2017-03-09 10:59:53  [ pool-1-thread-2:2201 ] - [ INFO ]  表达式: [ResponseDepend("TestCase01","policyNo")]开始解析...
+2017-03-09 10:59:53  [ pool-1-thread-2:2203 ] - [ INFO ]  
+表达式引擎解析后的参数: 
+productNo=ff633ad8736868f0b00fa0e64f48aa1524dfbbed13b9
+combinNo=GGNJICSR_GGNJICSR
+policyNo=823282000698019205
+cancelDate=2017-03-15 00:00:00
+transactionId=1
+2017-03-09 10:59:53  [ pool-1-thread-2:2204 ] - [ INFO ]  Excel参数JSON: {"cancelDate":"2017-03-15 00:00:00","combinNo":"GGNJICSR_GGNJICSR","policyNo":"823282000698019205","productNo":"ff633ad8736868f0b00fa0e64f48aa1524dfbbed13b9","transactionId":"1"}
+2017-03-09 10:59:53  [ pool-1-thread-2:2294 ] - [ INFO ]  bizcontent: {"failureReason":"policyNo=823282000698019205普通保单不存在","result":"1"}
+2017-03-09 10:59:53  [ pool-1-thread-2:2294 ] - [ INFO ]  ---------当前用例执行完毕，用例编号:TestCase72---------
+2017-03-09 10:59:53  [ pool-1-thread-2:2294 ] - [ INFO ]  [接口配置Down]: D:\workspace\TestCase\测试\uat-大疆三者责任险+机损险投保 .xlsx接口配置Down 未配置IP,取接口配置Up中的值
+2017-03-09 10:59:53  [ pool-1-thread-2:2294 ] - [ INFO ]  [接口配置Down]: D:\workspace\TestCase\测试\uat-大疆三者责任险+机损险投保 .xlsx接口配置Down 未配置VERSION,取接口配置Up中的值
+2017-03-09 10:59:53  [ pool-1-thread-2:2294 ] - [ INFO ]  ---------当前用例执行开始，用例编号:TestCase73,接口类型: OpenAPI
+2017-03-09 10:59:53  [ pool-1-thread-2:2295 ] - [ INFO ]  
+表达式引擎解析前的参数: 
+productNo=@PayloadDepend("TestCase01","productNo")
+combinNo=@PayloadDepend("TestCase01","combinNo")
+policyNo=@ResponseDepend("TestCase01","policyNo")
+cancelDate=2017-03-15 00:00:00
+transactionId=1
+2017-03-09 10:59:53  [ pool-1-thread-2:2304 ] - [ INFO ]  表达式: [PayloadDepend("TestCase01","productNo")]开始解析...
+2017-03-09 10:59:53  [ pool-1-thread-2:2307 ] - [ INFO ]  表达式: [PayloadDepend("TestCase01","combinNo")]开始解析...
+2017-03-09 10:59:53  [ pool-1-thread-2:2314 ] - [ INFO ]  表达式: [ResponseDepend("TestCase01","policyNo")]开始解析...
+2017-03-09 10:59:53  [ pool-1-thread-2:2317 ] - [ INFO ]  
+表达式引擎解析后的参数: 
+productNo=ff633ad8736868f0b00fa0e64f48aa1524dfbbed13b9
+combinNo=GGNJICSR_GGNJICSR
+policyNo=823282000698019205
+cancelDate=2017-03-15 00:00:00
+transactionId=1
+2017-03-09 10:59:53  [ pool-1-thread-2:2318 ] - [ INFO ]  Excel参数JSON: {"cancelDate":"2017-03-15 00:00:00","combinNo":"GGNJICSR_GGNJICSR","policyNo":"823282000698019205","productNo":"ff633ad8736868f0b00fa0e64f48aa1524dfbbed13b9","transactionId":"1"}
+2017-03-09 10:59:53  [ pool-1-thread-2:2477 ] - [ INFO ]  bizcontent: {}
+2017-03-09 10:59:53  [ pool-1-thread-2:2478 ] - [ INFO ]  ---------当前用例执行完毕，用例编号:TestCase73---------
+2017-03-09 10:59:54  [ main:3372 ] - [ INFO ]  ----程序结束运行----，程序运行时间【7367毫秒】

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Logback Configuration. -->
+<configuration debug="false">
+	<appender name="info"
+		class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<file>${log.path:-.}/logs/za-apt-agent.log</file>
+		<filter class="ch.qos.logback.classic.filter.LevelFilter">
+			<level>INFO</level>
+			<onMatch>ACCEPT</onMatch>
+			<onMismatch>DENY</onMismatch>
+		</filter>
+		<!-- 可让每天产生一个日志文件，最多 30 个，自动回滚 -->
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<fileNamePattern>${log.path:-.}/logs/za-apt-agent-%d{yyyy-MM-dd}.log
+			</fileNamePattern>
+			<maxHistory>30</maxHistory>
+		</rollingPolicy>
+		<encoder charset="GBK"> <!-- encoder 可以指定字符集，对于中文输出有意义 -->
+			<pattern>%d [%thread] %-5p [%c] [%F:%L] - %msg%n</pattern>
+		</encoder>
+	</appender>
+
+	<appender name="warn"
+		class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<file>${log.path:-.}/logs/za-apt-agent_warn.log</file>
+		<!-- 可让每天产生一个日志文件，最多 30 个，自动回滚 -->
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<fileNamePattern>${log.path:-.}/logs/za-apt-agent-%d{yyyy-MM-dd}_warn.log
+			</fileNamePattern>
+			<maxHistory>30</maxHistory>
+		</rollingPolicy>
+		<encoder charset="GBK"> <!-- encoder 可以指定字符集，对于中文输出有意义 -->
+			<pattern>%d [%thread] %-5p [%c] [%F:%L] - %msg%n</pattern>
+		</encoder>
+		<filter class="ch.qos.logback.classic.filter.LevelFilter">
+			<level>WARN</level>
+			<onMatch>ACCEPT</onMatch>
+			<onMismatch>DENY</onMismatch>
+		</filter>
+	</appender>
+
+	<appender name="error"
+		class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<!-- 可让每天产生一个日志文件，最多 30 个，自动回滚 -->
+		<file>${log.path:-.}/logs/za-apt-agent_error.log</file>
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<fileNamePattern>${log.path:-.}/logs/za-apt-agent-%d{yyyy-MM-dd}_error.log
+			</fileNamePattern>
+			<maxHistory>30</maxHistory>
+		</rollingPolicy>
+		<encoder charset="GBK"> <!-- encoder 可以指定字符集，对于中文输出有意义 -->
+			<pattern>%d [%thread] %-5p [%c] [%F:%L] - %msg%n</pattern>
+		</encoder>
+		<filter class="ch.qos.logback.classic.filter.LevelFilter">
+			<level>ERROR</level>
+			<onMatch>ACCEPT</onMatch>
+			<onMismatch>DENY</onMismatch>
+		</filter>
+	</appender>
+
+	<appender name="stdout" class="ch.qos.logback.core.ConsoleAppender">
+		<encoder>
+			<pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n
+			</pattern>
+		</encoder>
+	</appender>
+
+	<logger name="org.apache">
+		<level value="INFO" />
+	</logger>
+
+	<logger name="org.springframework">
+		<level value="INFO" />
+	</logger>
+
+	<logger name="org.apache.ibatis" level="INFO">
+		<appender-ref ref="info" />
+	</logger>
+
+	<logger name="com.za">
+		<level value="INFO" />
+	</logger>
+
+	<root>
+		<level value="INFO" />
+
+		<appender-ref ref="info" />
+		<appender-ref ref="warn" />
+		<appender-ref ref="error" />
+		<appender-ref ref="stdout" />
+
+	</root>
+
+</configuration>

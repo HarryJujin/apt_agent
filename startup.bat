@@ -1,0 +1,1 @@
+java -jar D:\workspace\za-apt-agent\target\za-apt-agent-0.0.1-SNAPSHOT.jar

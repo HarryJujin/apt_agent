@@ -1,0 +1,104 @@
+2017-03-01 15:44:21,508 [main] WARN  [org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext] [AbstractApplicationContext.java:549] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'coreController': Unsatisfied dependency expressed through field 'executeservice': Error creating bean with name 'executeservice': Unsatisfied dependency expressed through field 'reportservice': Error creating bean with name 'reportservice' defined in file [D:\workspace\za-apt-agent\target\classes\com\za\qa\domain\services\ReportServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type [java.util.LinkedList] found for dependency [java.util.LinkedList<com.za.qa.model.CombineData>]: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {}; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [java.util.LinkedList] found for dependency [java.util.LinkedList<com.za.qa.model.CombineData>]: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {}; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'reportservice' defined in file [D:\workspace\za-apt-agent\target\classes\com\za\qa\domain\services\ReportServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type [java.util.LinkedList] found for dependency [java.util.LinkedList<com.za.qa.model.CombineData>]: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {}; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [java.util.LinkedList] found for dependency [java.util.LinkedList<com.za.qa.model.CombineData>]: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {}; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'executeservice': Unsatisfied dependency expressed through field 'reportservice': Error creating bean with name 'reportservice' defined in file [D:\workspace\za-apt-agent\target\classes\com\za\qa\domain\services\ReportServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type [java.util.LinkedList] found for dependency [java.util.LinkedList<com.za.qa.model.CombineData>]: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {}; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [java.util.LinkedList] found for dependency [java.util.LinkedList<com.za.qa.model.CombineData>]: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {}; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'reportservice' defined in file [D:\workspace\za-apt-agent\target\classes\com\za\qa\domain\services\ReportServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type [java.util.LinkedList] found for dependency [java.util.LinkedList<com.za.qa.model.CombineData>]: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {}; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [java.util.LinkedList] found for dependency [java.util.LinkedList<com.za.qa.model.CombineData>]: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {}
+2017-03-01 15:44:21,522 [localhost-startStop-1] WARN  [org.apache.catalina.loader.WebappClassLoaderBase] [DirectJDKLog.java:179] - The web application [ROOT] appears to have started a thread named [Abandoned connection cleanup thread] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ java.lang.ref.ReferenceQueue.remove(Unknown Source)
+ com.mysql.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:43)
+2017-03-01 15:57:03,067 [main] WARN  [org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext] [AbstractApplicationContext.java:549] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'reportservice' defined in file [D:\workspace\za-apt-agent\target\classes\com\za\qa\domain\services\ReportServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type [java.util.LinkedList] found for dependency [java.util.LinkedList<com.za.qa.model.CombineData>]: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {}; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [java.util.LinkedList] found for dependency [java.util.LinkedList<com.za.qa.model.CombineData>]: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {}
+2017-03-01 15:57:03,097 [localhost-startStop-1] WARN  [org.apache.catalina.loader.WebappClassLoaderBase] [DirectJDKLog.java:179] - The web application [ROOT] appears to have started a thread named [Abandoned connection cleanup thread] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ java.lang.ref.ReferenceQueue.remove(Unknown Source)
+ com.mysql.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:43)
+2017-03-01 16:05:03,408 [main] WARN  [org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext] [AbstractApplicationContext.java:549] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'reportService' defined in file [D:\workspace\za-apt-agent\target\classes\com\za\qa\domain\services\ReportServiceImpl.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type [java.util.LinkedList] found for dependency [java.util.LinkedList<com.za.qa.model.CombineData>]: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {}; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type [java.util.LinkedList] found for dependency [java.util.LinkedList<com.za.qa.model.CombineData>]: expected at least 1 bean which qualifies as autowire candidate for this dependency. Dependency annotations: {}
+2017-03-01 16:05:03,431 [localhost-startStop-1] WARN  [org.apache.catalina.loader.WebappClassLoaderBase] [DirectJDKLog.java:179] - The web application [ROOT] appears to have started a thread named [Abandoned connection cleanup thread] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ java.lang.ref.ReferenceQueue.remove(Unknown Source)
+ com.mysql.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:43)
+2017-03-01 16:55:05,618 [localhost-startStop-1] WARN  [org.apache.catalina.loader.WebappClassLoaderBase] [DirectJDKLog.java:179] - The web application [ROOT] appears to have started a thread named [Abandoned connection cleanup thread] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ java.lang.ref.ReferenceQueue.remove(Unknown Source)
+ com.mysql.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:43)
+2017-03-01 17:55:32,055 [localhost-startStop-2] WARN  [org.apache.catalina.loader.WebappClassLoaderBase] [DirectJDKLog.java:179] - The web application [ROOT] appears to have started a thread named [Abandoned connection cleanup thread] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ java.lang.ref.ReferenceQueue.remove(Unknown Source)
+ com.mysql.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:43)
+2017-03-01 18:26:40,888 [localhost-startStop-2] WARN  [org.apache.catalina.loader.WebappClassLoaderBase] [DirectJDKLog.java:179] - The web application [ROOT] appears to have started a thread named [Abandoned connection cleanup thread] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+2017-03-02 17:02:00,887 [localhost-startStop-1] WARN  [org.apache.catalina.loader.WebappClassLoaderBase] [DirectJDKLog.java:179] - The web application [ROOT] appears to have started a thread named [Abandoned connection cleanup thread] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ java.lang.ref.ReferenceQueue.remove(Unknown Source)
+ com.mysql.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:43)
+2017-03-02 20:10:03,920 [http-nio-9090-exec-7] WARN  [com.caucho.hessian.io.SerializerFactory] [SerializerFactory.java:685] - Hessian/Burlap: 'com.zhongan.apt.bean.CombineData' is an unknown class in sun.misc.Launcher$AppClassLoader@73d16e93:
+java.lang.ClassNotFoundException: com.zhongan.apt.bean.CombineData
+2017-03-02 20:10:03,922 [http-nio-9090-exec-7] WARN  [com.caucho.hessian.io.SerializerFactory] [SerializerFactory.java:685] - Hessian/Burlap: 'com.zhongan.apt.bean.CaseDataDTO' is an unknown class in sun.misc.Launcher$AppClassLoader@73d16e93:
+java.lang.ClassNotFoundException: com.zhongan.apt.bean.CaseDataDTO
+2017-03-02 20:10:03,926 [http-nio-9090-exec-7] WARN  [com.caucho.hessian.io.SerializerFactory] [SerializerFactory.java:685] - Hessian/Burlap: 'com.zhongan.apt.bean.CombineData' is an unknown class in sun.misc.Launcher$AppClassLoader@73d16e93:
+java.lang.ClassNotFoundException: com.zhongan.apt.bean.CombineData
+2017-03-02 20:10:03,928 [http-nio-9090-exec-7] WARN  [com.caucho.hessian.io.SerializerFactory] [SerializerFactory.java:685] - Hessian/Burlap: 'com.zhongan.apt.bean.CaseDataDTO' is an unknown class in sun.misc.Launcher$AppClassLoader@73d16e93:
+java.lang.ClassNotFoundException: com.zhongan.apt.bean.CaseDataDTO
+2017-03-02 20:10:03,955 [http-nio-9090-exec-7] WARN  [org.springframework.remoting.support.RemoteInvocationTraceInterceptor] [RemoteInvocationTraceInterceptor.java:88] - Processing of HessianServiceExporter remote call resulted in fatal exception: com.za.qa.domain.services.CoreService.execute
+java.lang.ClassCastException: java.util.HashMap cannot be cast to com.za.qa.model.CombineData
+	at com.za.qa.domain.services.CoreServiceImpl.execute(CoreServiceImpl.java:39)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:333)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.remoting.support.RemoteInvocationTraceInterceptor.invoke(RemoteInvocationTraceInterceptor.java:78)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:213)
+	at com.sun.proxy.$Proxy69.execute(Unknown Source)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.caucho.hessian.server.HessianSkeleton.invoke(HessianSkeleton.java:302)
+	at com.caucho.hessian.server.HessianSkeleton.invoke(HessianSkeleton.java:217)
+	at org.springframework.remoting.caucho.HessianExporter.doInvoke(HessianExporter.java:223)
+	at org.springframework.remoting.caucho.HessianExporter.invoke(HessianExporter.java:138)
+	at org.springframework.remoting.caucho.HessianServiceExporter.handleRequest(HessianServiceExporter.java:66)
+	at org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter.handle(HttpRequestHandlerAdapter.java:51)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:897)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:648)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:729)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:230)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:87)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:77)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:192)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:165)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:198)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:108)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:522)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:349)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:1110)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:785)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1425)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
